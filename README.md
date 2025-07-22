@@ -19,4 +19,4 @@ This project recommends books, movies, or products based on user preferences usi
 ## 🚀 How to Run
 
 ```bash
-streamlit run recommend.py
+streamlit run app.py
