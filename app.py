@@ -5,8 +5,8 @@ import pandas as pd
 # --- Load Data ---
 @st.cache_data
 def load_data():
-    ratings = pd.read_csv("data/u.data", sep="\t", names=["user_id", "movie_id", "rating", "timestamp"])
-    movies = pd.read_csv("data/u.item", sep="|", encoding="latin-1", names=[
+    ratings = pd.read_csv("u.data", sep="\t", names=["user_id", "movie_id", "rating", "timestamp"])
+    movies = pd.read_csv("u.item", sep="|", encoding="latin-1", names=[
         "movie_id", "title", "release_date", "video_release", "imdb_url",
         "unknown", "action", "adventure", "animation", "childrens", "comedy", "crime",
         "documentary", "drama", "fantasy", "film_noir", "horror", "musical", "mystery",
